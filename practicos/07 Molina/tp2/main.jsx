@@ -13,7 +13,9 @@ function Contacto({ id, nombre, telefono, favorito, alCambiar }) {
     return (
         <div className="card">
             <span className="favorito">{favorito && "⭐"}</span>
+            <h3>Contacto</h3>
             <p className="nombre"> {nombre} <i>({id})</i> </p>
+            <h4>Telefono:</h4>
             <p>📞{telefono}</p>
             <button onClick={marcar}>{favorito ? "Desmarcar": "Marcar"}</button>
         </div>
